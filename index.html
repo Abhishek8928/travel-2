@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+
+    <!-- linking the external stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="bg-img">
+
+
+        <nav>
+
+
+            <div class="nav-links">
+                
+                    <div>
+                        <a href="" class="logo">trip</a>
+                    </div>
+                
+                    <div>
+                        <i class="bi bi-justify d-none" onclick="openNavigationHandler()"></i>
+                    </div>
+                    <div id="navi" class="third-link-container d-none-third">
+                    <a href="./app.html" class="nav-items">Discover</a>
+                    <a href="" class="nav-items">Community</a>
+                    <a href="" class="nav-items">Special Deals</a>
+                    <a href="" class="nav-items">About us</a>
+                    </div>    
+            </div>
+
+
+            <div class="btn d-none-btn">
+                <a class="sign-in" href="">Sign in</a>
+                <a class="register" href="">Register</a>
+            </div>
+
+
+        </nav>
+
+
+
+        <div class="wrapper ">
+            <div class="container-wrapper">
+                <div class="first-container txt-md-c">
+                    <h1 class="hero-title mb-0">Dream. Explore. Discover.</h1>
+                <p class="hero-desc mt-0">Globetrotters Voyage Tours and 
+                    Travels is a travel agency located in Mumbai, India. 
+                    Leading the way to your desired destination. </p>
+                <div class="btn-wrapper">
+                    <button class="discover-now">Discover Now</button>
+                </div>
+                </div>
+                
+
+                
+
+                <div class="second-container">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="search-container">
+                <div class="card">
+                    <select style="width:30%" name="" id="location" onchange="selectLocation()">
+                        <option value="">Location</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Jammu">Jammu</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                    <input class="hero-input"  type="text" placeholder="Enter your destination">
+                </div>
+                <div class="card">
+                    <h5>Date</h5>
+                    <input class="hero-input" type="date" placeholder="When it will start?">
+                </div>
+                <div class="card">
+                    <select name="" id="no-people" style="width:30%" onchange="selectPeople()">
+                        <option value="">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <input class="hero-input" type="number" placeholder="How Many People?">
+                </div>
+                <div class="card-4">
+                    <button class="btn-explore-now">Explore Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+
+    <script src="./App.js"></script>
+</body>
+
+</html>
