@@ -13,7 +13,7 @@ body{
 
 .bg-img{
     background: url(./img/daniel-leone-g30P1zcOzXo-unsplash.jpg) no-repeat center;
-    height: 820px;
+    height: 800px;
     width:auto;
     background-size: cover;
 }
@@ -77,7 +77,6 @@ ul{
 }
 .container-wrapper{
     display:flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -221,7 +220,7 @@ padding:10px 3%;
     gap:1rem;
 }
 .d-none-third{
-    display: none !important;
+    visibility: hidden !important;
 }
 
 
@@ -248,14 +247,28 @@ padding:10px 3%;
     color:white;
     width:100%;
 }
+.mt-md-0{
+    margin-top: 0px;
+}
 }
 
 
 
 
 @media (max-width:576px){
+    nav{
+        display:block;
+        padding:5px 4%;
+    }
+    .third-link-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+        gap:0.2rem;
+    }
     .card{
-        width:50%;
+        width:100%;
         margin-bottom: 10px;
     }
     .card-4{
@@ -267,7 +280,7 @@ padding:10px 3%;
 
     .input-container{
         border-radius: 8px;
-        opacity:0.9;
+        opacity:0.8;
         background-color: black;
         display:flex;
         justify-content:space-between;
@@ -277,10 +290,23 @@ padding:10px 3%;
         margin-top: 20px;
     }
     .bg-img{
-       height:900px;
+       height:860px;
         width:auto;
         background-size: cover;
     }
+    
+.hero-title{
+    font-size: 45px;
+    font-weight: 800;
+    color:white;
+    opacity:0.9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-desc{
+    color:white;
+    opacity:0.8;
+}
     
     
   
